@@ -4,14 +4,14 @@
 #include <QtCore/QRegularExpression>
 #include <QtCore/QDebug>
 
-#include "connection.h"
-#include "room.h"
-#include "user.h"
-#include "events/event.h"
-#include "events/roommessageevent.h"
-#include "events/roommemberevent.h"
-#include "events/simplestateevents.h"
-#include "events/redactionevent.h"
+#include <connection.h>
+#include <room.h>
+#include <user.h>
+#include <events/event.h>
+#include <events/roommessageevent.h>
+#include <events/roommemberevent.h>
+#include <events/simplestateevents.h>
+#include <events/redactionevent.h>
 
 MessageEventModel::MessageEventModel(QObject* parent)
     : QAbstractListModel(parent)

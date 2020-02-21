@@ -9,21 +9,23 @@ lipstick_config.files = $$PWD/*.conf
 lipstick_config.path  = /usr/share/lipstick/notificationcategories
 INSTALLS    += lipstick_config
 
-CONFIG += c++14 sailfishapp
+CONFIG += c++17 sailfishapp
 
-PKGCONFIG += keepalive
 PKGCONFIG += nemonotifications-qt5
+PKGCONFIG += keepalive
+PKGCONFIG += Quotient
+INCLUDEPATH += /usr/include/libQuotient-qt5 #FIXME: libQuotient mer pkgconfig
 
-QMAKE_CXX=/opt/gcc6/bin/g++
-QMAKE_CC=/opt/gcc6/bin/gcc
-QMAKE_LINK=/opt/gcc6/bin/g++
+QMAKE_CXX=/opt/gcc/bin/g++
+QMAKE_CC=/opt/gcc/bin/gcc
+QMAKE_LINK=/opt/gcc/bin/g++
+QMAKE_CXXFLAGS += -std=c++17 -std=gnu++17
 
-include(lib/libqmatrixclient.pri)
-
-LIBS += -lz -L/opt/gcc6/lib \
+LIBS += -lz -L/opt/gcc/lib \
             -Lkeepalive \
             -Lnemonotifications-qt5 \
             -Lnemodbus \
+            -LQuotient\ 
             -static-libstdc++
 
 SOURCES += src/harbour-matrix.cpp \

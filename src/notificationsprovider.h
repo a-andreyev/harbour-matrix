@@ -1,8 +1,8 @@
 #ifndef NOTIFICATIONSPROVIDER_H
 #define NOTIFICATIONSPROVIDER_H
 
-#include "connection.h"
-#include "csapi/notifications.h"
+#include <connection.h>
+#include <csapi/notifications.h>
 #include <backgroundactivity.h>
 
 class NotificationsProvider : public QObject

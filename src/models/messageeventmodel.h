@@ -1,7 +1,7 @@
 #ifndef LOGMESSAGEMODEL_H
 #define LOGMESSAGEMODEL_H
 
-#include "events/event.h"
+#include <events/event.h>
 
 #include <QtCore/QAbstractListModel>
 #include <QtCore/QModelIndex>

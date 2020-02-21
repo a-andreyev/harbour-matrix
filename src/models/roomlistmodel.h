@@ -2,7 +2,7 @@
 #define ROOMLISTMODEL_H
 
 #include <QtCore/QAbstractListModel>
-#include "connection.h"
+#include <connection.h>
 
 namespace QMatrixClient
 {

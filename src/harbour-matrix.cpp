@@ -6,10 +6,10 @@
 #include <QQmlContext>
 #include <QScopedPointer>
 #include <QSortFilterProxyModel>
-#include "connection.h"
-#include "room.h"
-#include "user.h"
-#include "jobs/syncjob.h"
+#include <connection.h>
+#include <room.h>
+#include <user.h>
+#include <jobs/syncjob.h>
 #include "imageprovider.h"
 #include "notificationsprovider.h"
 #include "src/scriptlauncher.h"

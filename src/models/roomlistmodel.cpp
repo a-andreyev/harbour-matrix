@@ -22,8 +22,8 @@
 #include <QtGui/QColor>
 #include <QtCore/QDebug>
 
-#include "connection.h"
-#include "room.h"
+#include <connection.h>
+#include <room.h>
 
 RoomListModel::RoomListModel(QObject* parent)
     : QAbstractListModel(parent)

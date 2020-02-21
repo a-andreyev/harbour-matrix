@@ -10,11 +10,11 @@ Name:       harbour-matrix
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Unofficial Matrix.org client
-Version:    0.91
-Release:    7
+Version:    0.92
+Release:    1
 Group:      Qt/Qt
 License:    GPLv3
-URL:        https://github.com/Sailbook/harbour-matrix
+URL:        https://github.com/r0kk3rz/harbour-matrix
 Source0:    %{name}-%{version}.tar.bz2
 Requires:   sailfishsilica-qt5 >= 0.10.9
 Requires:   nemo-qml-plugin-configuration-qt5
@@ -22,13 +22,14 @@ BuildRequires:  pkgconfig(sailfishapp) >= 1.0.2
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
+BuildRequires:  pkgconfig(Quotient) >= 0.6
 BuildRequires:  libkeepalive-devel
 BuildRequires:  nemo-qml-plugin-notifications-qt5-devel
 BuildRequires:  nemo-qml-plugin-dbus-qt5-devel
 BuildRequires:  desktop-file-utils
 # https://build.merproject.org/package/show/home:rinigus:toolbox/opt-gcc
 # https://github.com/rinigus/pkg-gcc
-BuildRequires:  opt-gcc6
+BuildRequires:  opt-gcc
 
 %description
 Unofficial Matrix.org client

@@ -1,12 +1,12 @@
 #include "notificationsprovider.h"
-#include "connection.h"
-#include "events/roommessageevent.h"
-#include "csapi/notifications.h"
+#include <connection.h>
+#include <events/roommessageevent.h>
+#include <csapi/notifications.h>
 #include <QCoreApplication>
 #include <backgroundactivity.h>
 #include <notification.h>
-#include "user.h"
-#include "events/event.h"
+#include <user.h>
+#include <events/event.h>
 
   NotificationsProvider::NotificationsProvider(QMatrixClient::Connection *connection): QObject()
   {
